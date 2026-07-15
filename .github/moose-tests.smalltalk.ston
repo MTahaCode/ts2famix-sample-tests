@@ -1,6 +1,6 @@
 SmalltalkCISpec {
   #loading : [
-    SCILoadSpec {
+    SCIMetacelloLoadSpec {
       #baseline : 'FamixTypeScriptImporter',
       #directory : 'tests',
       #platforms : [ #pharo ]
