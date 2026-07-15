@@ -33,14 +33,8 @@ jobs:
           ts2famix -i tsconfig.json -o JSONModels/model.json
 
       # 5. Set up smalltalk-ci and run the tests using Moose 12
-      # - name: Run Pharo/Moose Tests
-      #   uses: hpi-swa-lab/smalltalkCI@v1
-      #   with:
-      #     smalltalk-image: 'Moose64-12' # Targets Moose 12 (built on Pharo 12)
-
-      - name: Upload Model Artifact
-        uses: actions/upload-artifact@v4
+      - name: Run Pharo/Moose Tests
+        uses: hpi-swa-lab/smalltalkCI@v1
         with:
-          name: famix-model-json
-          path: JSONModels/model.json
-          retention-days: 5
+          smalltalk-image: 'Moose64-12' # Targets Moose 12 (built on Pharo 12)
+          config-file: '.github/moose-analysis.ston'

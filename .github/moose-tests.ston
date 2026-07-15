@@ -1,0 +1,12 @@
+SmalltalkCISpec {
+  #loading : [
+    SCILoadSpec {
+      #baseline : 'FamixTypeScriptImporter',
+      #directory : 'tests',
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #packages : [ 'Famix-TypeScript-Importer-Tests' ]
+  }
+}
