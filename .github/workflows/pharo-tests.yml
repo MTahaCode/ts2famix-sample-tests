@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: '22'
-          cache: 'npm'
+          # cache: 'npm'
 
       # 3. Install ts2famix globally
       - name: Install ts2famix
