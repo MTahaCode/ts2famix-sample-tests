@@ -29,8 +29,6 @@ ClassesTest >> testModelHasClasses [
 	
 	self assert: classes size equals: 9.
 	
-	self assert: (classes anySatisfy: [ :each | each name = 'Service' ]).
-	self assert: (classes anySatisfy: [ :each | each name = 'Container' ]).
 	self assert: (classes anySatisfy: [ :each | each name = 'Repository' ]).
 	self assert: (classes anySatisfy: [ :each | each name = 'User' ]).
 	self assert: (classes anySatisfy: [ :each | each name = 'Animal' ]).
@@ -38,6 +36,8 @@ ClassesTest >> testModelHasClasses [
 	self assert: (classes anySatisfy: [ :each | each name = 'Cat' ]).
 	self assert: (classes anySatisfy: [ :each | each name = 'Circle' ]).
 	self assert: (classes anySatisfy: [ :each | each name = 'Rectangle' ]).
+	self assert: (classes anySatisfy: [ :each | each name = 'Service' ]).
+	self assert: (classes anySatisfy: [ :each | each name = 'Container' ]).
 	
 	
 	
