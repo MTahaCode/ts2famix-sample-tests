@@ -35,9 +35,10 @@ jobs:
       # 5. Set up smalltalk-ci and run the tests using Moose 12
       - name: Run Pharo/Moose Tests
         uses: hpi-swa/setup-smalltalkCI@v1
+        id: smalltalkci
         with:
           smalltalk-image: 'Moose64-12' # Targets Moose 12 (built on Pharo 12)
       
       - run: smalltalkci -s ${{ steps.smalltalkci.outputs.smalltalk-image }} .github/moose-tests.ston
         shell: bash
-        timeout-minutes: 15
+        timeout-minutes: 15 
