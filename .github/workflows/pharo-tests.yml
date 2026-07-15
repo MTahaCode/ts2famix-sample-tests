@@ -32,7 +32,7 @@ jobs:
           mkdir -p JSONModels
           ts2famix -i src -o JSONModels/model.json
 
-      # # 5. Set up smalltalk-ci and run the tests using Moose 12
+      # 5. Set up smalltalk-ci and run the tests using Moose 12
       # - name: Run Pharo/Moose Tests
       #   uses: hpi-swa-lab/smalltalkCI@v1
       #   with:
