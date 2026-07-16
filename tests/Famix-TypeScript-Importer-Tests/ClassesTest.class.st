@@ -13,7 +13,7 @@ ClassesTest >> setUp [
 	| file |
 	super setUp.
 	
-	file := 'D:\Projects\ts2famix-sample-tests\JSONModels\model.json' asFileReference.
+	file := 'JSONModels/model.json' asFileReference.
 	
 	self assert: file exists description: 'The Json file is missing'.
 	
