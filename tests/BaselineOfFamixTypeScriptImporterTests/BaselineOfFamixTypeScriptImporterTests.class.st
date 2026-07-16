@@ -1,8 +1,8 @@
 Class {
 	#name : 'BaselineOfFamixTypeScriptImporterTests',
 	#superclass : 'BaselineOf',
-	#category : 'BaselineOfFamix-TypeScript-Importer-Tests',
-	#package : 'BaselineOfFamix-TypeScript-Importer-Tests'
+	#category : 'BaselineOfFamixTypeScriptImporterTests',
+	#package : 'BaselineOfFamixTypeScriptImporterTests'
 }
 
 { #category : 'baselines' }
